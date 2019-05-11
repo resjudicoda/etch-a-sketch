@@ -1,0 +1,18 @@
+#container {
+    display: grid;
+    border: 10px solid red;
+    width: minmax(500px, 1fr);
+    height: minmax(500px, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(5px, 1fr));
+    grid-auto-rows: minmax(5px, 1fr);
+}
+
+#container div {
+    height: minmax(5px, 1fr);
+    width: minmax(5px, 1fr);
+}
+
+.gridSquare {
+    background-color: rgb(226, 224, 224);
+}
+
