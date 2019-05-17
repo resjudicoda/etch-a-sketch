@@ -1,18 +1,44 @@
 #container {
     display: grid;
     border: 10px solid red;
-    width: minmax(500px, 1fr);
-    height: minmax(500px, 1fr);
-    grid-template-columns: repeat(auto-fill, minmax(5px, 1fr));
-    grid-auto-rows: minmax(5px, 1fr);
+    width: 500px;
+    height: 500px;
+    grid-template-columns: repeat(autofill, minmax(0%, 1fr) );
+    grid-auto-rows: minmax(0%, 1fr);
+    grid-auto-flow: column;
 }
 
-#container div {
-    height: minmax(5px, 1fr);
-    width: minmax(5px, 1fr);
+.defaultGridColumn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.defaultGridSquare {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(226, 224, 224);
+}
+
+.gridColumn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
 }
 
 .gridSquare {
+    height: 100%;
+    width: 100%;
     background-color: rgb(226, 224, 224);
 }
+
+#button {
+    height: 20px;
+    width: 50px;
+    float: left;
+}
+
+
 
